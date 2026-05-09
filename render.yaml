@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: real-time-online-voting-system
+    runtime: java
+    plan: free
+    buildCommand: mvn clean package -DskipTests
+    startCommand: mvn tomcat7:run -Dtomcat.port=$PORT
+    envVars:
+      - key: MYSQL_URL
+        sync: false
+      - key: MYSQL_USERNAME
+        sync: false
+      - key: MYSQL_PASSWORD
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DATABASE
+        value: online_voting_system
+      - key: APP_PUBLIC_BASE_URL
+        sync: false
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false

@@ -1,0 +1,19 @@
+target/
+*.log
+cookies.txt
+.vscode/
+.github/java-upgrade/
+src/main/webapp/uploads/
+
+# Local environment and secret files
+.env
+.env.*
+!.env.example
+*.local
+application-local.properties
+application-secret.properties
+secrets/
+*.pem
+*.key
+*.p12
+*.jks

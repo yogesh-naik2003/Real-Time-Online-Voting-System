@@ -1,0 +1,15 @@
+package com.voting.util;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+public final class JsonUtil {
+    private static final Gson GSON = new GsonBuilder().create();
+
+    private JsonUtil() {
+    }
+
+    public static String toJson(Object object) {
+        return GSON.toJson(object);
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "SEC Online Voting Portal",
+  "short_name": "SEC Voting",
+  "description": "Secure, Decentralized State Election Commission Voting Portal",
+  "start_url": "/index.jsp",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#3b82f6",
+  "icons": []
+}
